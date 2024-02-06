@@ -27,6 +27,31 @@
   </div>
 
   <div>
+    <%= form.label :studio, style: "display: block" %>
+    <%= form.text_field :studio %>
+  </div>
+
+  <div>
+    <%= form.label :audience_score, style: "display: block" %>
+    <%= form.text_field :audience_score %>
+  </div>
+  
+  <div>
+    <%= form.label :rt_score, style: "display: block" %>
+    <%= form.text_field :rt_score %>
+  </div>  
+
+  <div>
+    <%= form.label :profitability, style: "display: block" %>
+    <%= form.text_field :profitability %>
+  </div>
+
+  <div>
+    <%= form.label :gross, style: "display: block" %>
+    <%= form.text_field :gross %>
+  </div>    
+  
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
