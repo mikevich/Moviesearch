@@ -5,37 +5,27 @@
   </p>
 
   <p>
-    <strong>Release year:</strong>
-    <%= movie.release_year %>
-  </p>
-
-  <p>
-    <strong>Genre:</strong>
-    <%= movie.genre %>
-  </p>
-  
-  <p>
-    <strong>Studio:</strong>
-    <%= movie.studio %>
-  </p>
-
-  <p>
     <strong>Audience score:</strong>
     <%= movie.audience_score %>
   </p>
 
   <p>
-    <strong>Rotten Tomatoes score:</strong>
+    <strong>Rt score:</strong>
     <%= movie.rt_score %>
-  </p>   
-
-  <p>
-    <strong>Profitability:</strong>
-    <%= movie.profitability.round(3) %>
   </p>
 
   <p>
-    <strong>Worldwide Gross:</strong>
-   $<%= movie.gross %> million
-  </p>    
+    <strong>Profitability:</strong>
+    <%= movie.profitability %>
+  </p>
+
+  <p>
+    <strong>Gross:</strong>
+    <%= movie.gross %>
+  </p>
+
+  <p>
+    <strong>Year:</strong>
+    <%= movie.year %>
+  </p>
 </div>

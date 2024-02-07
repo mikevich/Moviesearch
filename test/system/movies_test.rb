@@ -14,10 +14,12 @@ class MoviesTest < ApplicationSystemTestCase
     visit movies_url
     click_on "New movie"
 
-    fill_in "Country", with: @movie.country
-    fill_in "Genre", with: @movie.genre
-    fill_in "Release year", with: @movie.release_year
+    fill_in "Audience score", with: @movie.audience_score
+    fill_in "Gross", with: @movie.gross
+    fill_in "Profitability", with: @movie.profitability
+    fill_in "Rt score", with: @movie.rt_score
     fill_in "Title", with: @movie.title
+    fill_in "Year", with: @movie.year
     click_on "Create Movie"
 
     assert_text "Movie was successfully created"
@@ -28,10 +30,12 @@ class MoviesTest < ApplicationSystemTestCase
     visit movie_url(@movie)
     click_on "Edit this movie", match: :first
 
-    fill_in "Country", with: @movie.country
-    fill_in "Genre", with: @movie.genre
-    fill_in "Release year", with: @movie.release_year
+    fill_in "Audience score", with: @movie.audience_score
+    fill_in "Gross", with: @movie.gross
+    fill_in "Profitability", with: @movie.profitability
+    fill_in "Rt score", with: @movie.rt_score
     fill_in "Title", with: @movie.title
+    fill_in "Year", with: @movie.year
     click_on "Update Movie"
 
     assert_text "Movie was successfully updated"

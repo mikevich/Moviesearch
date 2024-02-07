@@ -2,12 +2,16 @@
 
 one:
   title: MyString
-  release_year: 1
-  genre: MyString
-  country: MyString
+  audience_score: 1
+  rt_score: 1
+  profitability: 1.5
+  gross: 9.99
+  year: 1
 
 two:
   title: MyString
-  release_year: 1
-  genre: MyString
-  country: MyString
+  audience_score: 1
+  rt_score: 1
+  profitability: 1.5
+  gross: 9.99
+  year: 1

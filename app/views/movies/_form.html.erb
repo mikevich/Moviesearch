@@ -17,29 +17,14 @@
   </div>
 
   <div>
-    <%= form.label :release_year, style: "display: block" %>
-    <%= form.number_field :release_year %>
-  </div>
-
-  <div>
-    <%= form.label :genre, style: "display: block" %>
-    <%= form.text_field :genre %>
-  </div>
-
-  <div>
-    <%= form.label :studio, style: "display: block" %>
-    <%= form.text_field :studio %>
-  </div>
-
-  <div>
     <%= form.label :audience_score, style: "display: block" %>
-    <%= form.text_field :audience_score %>
+    <%= form.number_field :audience_score %>
   </div>
-  
+
   <div>
     <%= form.label :rt_score, style: "display: block" %>
-    <%= form.text_field :rt_score %>
-  </div>  
+    <%= form.number_field :rt_score %>
+  </div>
 
   <div>
     <%= form.label :profitability, style: "display: block" %>
@@ -49,8 +34,13 @@
   <div>
     <%= form.label :gross, style: "display: block" %>
     <%= form.text_field :gross %>
-  </div>    
-  
+  </div>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
   <div>
     <%= form.submit %>
   </div>
