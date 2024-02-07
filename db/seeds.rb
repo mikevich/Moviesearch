@@ -45,6 +45,4 @@ csv.each do |row|
 
     m.save
     puts "#{m.title} saved"
-
-
 end
