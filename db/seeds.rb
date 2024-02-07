@@ -40,7 +40,7 @@ csv.each do |row|
     m.audience_score = row['Audience score %']
     m.rt_score = row['Rotten Tomatoes %']
     m.profitability = row['Profitability']
-    m.gross = row['Worldwide Gross']
+    m.gross = row['Worldwide Gross'][1..-1]
     m.year = row['Year']
 
     m.save

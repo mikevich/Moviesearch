@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_07_205942) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_07_215605) do
   create_table "genres", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
@@ -26,6 +26,24 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_07_205942) do
     t.integer "year"
     t.integer "studio_id"
     t.integer "genre_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "searches", force: :cascade do |t|
+    t.string "keywords"
+    t.integer "genre_id"
+    t.integer "studio_id"
+    t.integer "min_audience_score"
+    t.integer "max_audience_score"
+    t.integer "min_rt_score"
+    t.integer "max_rt_score"
+    t.float "min_profitability"
+    t.float "max_profitability"
+    t.decimal "min_gross"
+    t.decimal "max_gross"
+    t.integer "min_year"
+    t.integer "max_year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

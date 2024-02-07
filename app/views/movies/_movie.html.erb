@@ -1,7 +1,7 @@
-<div id="<%= dom_id movie %>">
+<div id="<%= dom_id movie %>" style="border: 1px solid black; margin-bottom: 20px" class="container">
   <p>
     <strong>Title:</strong>
-    <%= movie.title %>
+    <%= link_to movie.title, movie_path(movie.id) %>
   </p>
 
   <p>
@@ -10,18 +10,18 @@
   </p>
 
   <p>
-    <strong>Rt score:</strong>
+    <strong>Rotten Tomatoes score:</strong>
     <%= movie.rt_score %>
   </p>
 
   <p>
     <strong>Profitability:</strong>
-    <%= movie.profitability %>
+    <%= movie.profitability.round(2) %>
   </p>
 
   <p>
     <strong>Gross:</strong>
-    <%= movie.gross %>
+    $<%= movie.gross %> million
   </p>
 
   <p>
